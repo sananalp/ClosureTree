@@ -1,1 +1,1 @@
-![Screenshot](public/assets/bunny.png)
+![Screenshot](public/assets/Screenshot.png)
