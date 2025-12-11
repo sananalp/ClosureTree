@@ -1,15 +1,81 @@
-body {
+/* === RESET === */
+* {
     margin: 0;
     padding: 0;
-    color: rgba(255, 255, 255, 0.87);
-    background-color: #000000;
+    box-sizing: border-box;
 }
 
-#app {
-    width: 100%;
-    height: 100vh;
+/* === GLOBAL === */
+body {
+    background: #0f172a;         /* dark blue */
+    color: #e2e8f0;             /* slate-200 */
+    font-family: sans-serif;
     overflow: hidden;
+}
+
+/* === MAIN CONTAINER === */
+#app {
+    width: 100vw;
+    height: 100vh;
+    padding: 20px;
     display: flex;
+    gap: 20px;
+
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
+
+    overflow: hidden;
+}
+
+/* === COLUMN LAYOUT === */
+.panel {
+    flex: 1;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+
+    background: #1e293b;       /* dark slate */
+    border-radius: 12px;
+    padding: 16px;
+
+    overflow: hidden;
+}
+
+/* === PANEL TITLE === */
+.panel h2 {
+    font-size: 18px;
+    margin-bottom: 12px;
+    color: #93c5fd;
+    font-weight: 600;
+}
+
+/* === DOM LIST AREA === */
+#dom {
+    flex: 1;
+    overflow-y: auto;
+    padding-right: 6px;
+}
+
+/* === CANVAS === */
+#canvas {
+    width: 100%;
+    height: 100%;
+    background: #0f172a;
+    border-radius: 8px;
+
+    /* Prevent overflow */
+    max-width: 100%;
+    max-height: 100%;
+}
+
+/* === PIXI === */
+#pixi {
+    width: 100%;
+    height: 100%;
+    background: #0f172a;
+    border-radius: 8px;
+
+    /* Prevent overflow */
+    max-width: 100%;
+    max-height: 100%;
 }
